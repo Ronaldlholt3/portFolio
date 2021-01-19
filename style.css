@@ -1,0 +1,175 @@
+/* step two, set up up global CSS variables */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary: #a80e4e;
+    --color-secondary: #000000;
+    --color-border: #1198ce34;
+    --font-staat: 'Staatliches', cursive;
+    --font-os:  'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+/* global classes */
+.font-staat{
+    font: normal 400 18px var(--font-staat);
+}
+.font-os{
+    font: normal 300 18px var(--font-os);
+}
+.font-ram{
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+
+.bgcolor-primary{
+    background-color: var(--color-primary);
+}
+
+/* #global classes */
+ /* step four, add header CSS */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1;
+    transition: left .5s ease;
+}
+
+#header nav{
+    height: 100vh;
+}
+#header .site-title .navbar-brand{
+    letter-spacing: 2px;
+    color: var(--color-secondary);
+}
+
+#header .nav-link{
+    margin: .7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover{
+    color: var(--color-secondary) !important;
+}
+
+#header .toggle-button{
+    background: none;
+    color: var(--color-primary);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+.toggle-left{
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+/* site-main */
+
+
+.site-banner .banner-area{
+    background: url(newyork.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.site-banner .banner-area .author{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: url(rondon.jpg) no-repeat;
+    background-size: 200px;
+    background-position: 40% 0;
+}
+
+
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+}
+
+.card-body:hover{
+    width: 250px;
+    /* background-color: purple; */
+}
+.card:hover{
+    transform: scale(1.1);
+    background-color: purple;
+}
+
+html, body {
+    width:auto!important; overflow-x: hidden!important;
+}
+/* #site-main */
+
+#overflow{
+    overflow: hidden;
+}
+
+.neon{
+    text-shadow: 0 0 20px rgb(142, 134, 219),
+                 0 0 40px rgb(52, 58, 145),
+                 0 0 80px rgb(22, 9, 68);
+    padding: 20px;
+    color: #fff;
+    top: 0;
+    left: 0;
+    /* z-index: 9; */
+
+}
+/* .neon:after{
+    content: attr(data-text);
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #fff;
+    filter: blur(15px);
+} */
+.bodycolor{
+    background-color: black;
+}
+.blur{
+    background: #a80e4e;
+    
+}
