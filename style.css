@@ -173,3 +173,33 @@ html, body {
     background: #a80e4e;
     
 }
+
+.seperate{
+    background: black;
+   margin: 20px;
+}
+
+.apple{
+    background: #a80e4e;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color: purple;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  li{
+      font-size: 50px;
+      font-style:oblique;
+  }
+
+  
